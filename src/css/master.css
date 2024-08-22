@@ -78,7 +78,7 @@ section#a-propos a {color: var(--marina-blue);}
     height: 220px;
     border: 1px solid;
     border-radius: 15px;
-    position: relative;   /* Assure que le positionnement est correct */
+    position: relative; /* Assure que le positionnement est correct */
     overflow: hidden; 
 }
 .banniere-caroussel-1{height: 15%;}
@@ -89,10 +89,7 @@ section#a-propos a {color: var(--marina-blue);}
     border-radius: 20px;
 }
 .rotate-carousel-wrapper {
-    overflow: hidden;  /* Cache tout débordement du carrousel */
     width: 100%;
-    max-width: 1300px; /* Limite la largeur maximale pour éviter l'explosion de la taille de la page */
-    margin: 0 auto;    /* Centre le carrousel sur la page */
 }
 /* parcours */
 .card-item {

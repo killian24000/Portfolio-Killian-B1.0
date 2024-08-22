@@ -7,7 +7,7 @@ console.log("Hello World")
 // splide js 
 addEventListener("DOMContentLoaded", function(){
 var splide = new Splide( '.splide', {
-  perPage: 3,
+  perPage: 4,
   gap: '16px',
   type: 'loop',
   focus: 'center',
