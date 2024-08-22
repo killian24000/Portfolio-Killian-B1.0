@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset.css */
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+}
+:root{
+    --gunmetal: #153138;
+    --Skobeloff: #197673;
+    --dark-gunmetal: #1F292C;
+    --marina-blue: #1F353B;
+    --alice-blue: #F2F7FF;
+}
+img {width: 100%;}
+ion-icon {font-size: 30px;}
+body{background-color: var(--alice-blue); overflow-x: hidden;}
+main > section{gap: 54px;}
+main{margin: 120px 0 120px 0;}
+p, h3{margin-bottom: 0;}
+/* Dont yourself repeat */
+.margin-container{gap: 194px}
+.txt-justify{text-align: justify;}
+.alice-blue-color{color: var(--alice-blue);}
+.alice-blue-bg{background-color: var(--alice-blue);}
+.marina-blue-color{color:var(--marina-blue)}
+.marina-blue-bg {background-color: var(--marina-blue);}
+.skobeloff-color{color: var(--Skobeloff);}
+.skobeloff-bg{background-color: var(--Skobeloff);}
+.gunmetal-bg{background-color: var(--gunmetal);}
+.gunmetal-color{color: var(--gunmetal);}
+.br-rad-15 {border-radius: 15px;}
+.fs-14{font-size: 14px;}
+.fs-16 {font-size: 16px;}
+.fs-32{ font-size: 32px;}
+/* HEADER */
+header{
+    background-color: var(--gunmetal);
+    color: var(--alice-blue);
+}
+header .logo {width: 190px;}
+nav ul li {font-size: 22px;}
+.navbar-mobile{display: none;}
+/* Title */
+.horizontal-line {
+    width: 90px; /* Longueur du trait */
+    height: 2px; /* Épaisseur du trait */
+    background-color: var(--alice-blue); /* Couleur du trait */
+}
+.title {font-size: 48px;}
+.title-padding {padding-bottom: 7rem;}
+/* gallery photo */
+.gallery-item {padding: 0; /* Enlève le padding pour supprimer l'espace autour de l'image */}
+.gallery-img {
+    width: 100%; /* Remplit la largeur du conteneur */
+    height: 500px; /* Conserve le ratio d'aspect */
+    object-fit: cover; /* Optionnel : assure que l'image couvre toute la zone sans déformation */
+}
+/* Pour enlever les marges entre les colonnes */
+.row.no-gutters {margin: 0;}
+.row.no-gutters > .col {padding: 0;}
+/* MAIN */
+/* a propos */
+section#a-propos,
+section#a-propos a {color: var(--marina-blue);}
+.button {
+    border-radius: 50%;
+    border: var(--Skobeloff) 2px solid;
+    padding: 20px;
+}
+/* projet */
+.item {
+    width: 100%;
+    height: 220px;
+    border: 1px solid;
+    border-radius: 15px;
+    position: relative;   /* Assure que le positionnement est correct */
+    overflow: hidden; 
+}
+.banniere-caroussel-1{height: 15%;}
+.content-caroussel{padding: 15px;}
+.decoration-carrousel{
+    height: 20px;
+    width: 80%;
+    border-radius: 20px;
+}
+.rotate-carousel-wrapper {
+    overflow: hidden;  /* Cache tout débordement du carrousel */
+    width: 100%;
+    max-width: 1300px; /* Limite la largeur maximale pour éviter l'explosion de la taille de la page */
+    margin: 0 auto;    /* Centre le carrousel sur la page */
+}
+/* parcours */
+.card-item {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    border-radius: 15px;
+    border: 2px solid;
+}
+/* formulaire de contact */
+.title-responsive {
+  font-size: 24px;
+}
+.contact-container article, form {
+  padding: 32px;
+  border-radius: 15px;
+}
+.contact-container form input, 
+.contact-container form textarea {
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid var(--alice-blue);
+}
+.contact-container form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Skobeloff);
+  color: var(--alice-blue);
+}
+.contact-container button:hover{
+  background-color: var(--alice-blue);
+  color: var(--Skobeloff);
+  transition: ease 0.2s;
+}
+@media (max-width: 1200px){
+  .contact-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .input-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-responsive {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px){
+  .responsive-card-carousel li h3 {font-size: 20px;}
+  .responsive-card-carousel li p {font-size: 14px;}
+}
+@media (max-width: 760px){
+  .navbar-desktop{display: none;}
+  /* navbar mobile */
+  .navbar-mobile{
+    display: flex;
+    justify-content: center;
+  }
+  .horizontal-line{width: 70px;}
+  .logo-mobile {
+    width: 150px;
+  }
+  .title-mobile {margin-top: 110px;}
+  .title-mobile h1 {margin-bottom: 30px;}
+  .title-mobile h1{font-size: 32px;}
+  .title-mobile p {font-size: 24px;}
+  .navbar-mobile nav {
+    border-top: 2px solid var(--marina-blue);
+  }
+  .navbar-mobile nav a {
+    font-size: 10px;
+  }
+  .space-navbar-footer{
+    margin-top: 65px;
+  }
+}
+/* Footer */
+footer {border-top: 3px solid;}
