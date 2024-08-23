@@ -16,12 +16,11 @@
     --marina-blue: #1F353B;
     --alice-blue: #F2F7FF;
 }
-img {width: 100%;}
-ion-icon {font-size: 30px;}
-body{background-color: var(--alice-blue); overflow-x: hidden;}
-main > section{gap: 54px;}
-main{margin: 120px 0 120px 0;}
 p, h3{margin-bottom: 0;}
+img {max-width: 100%;}
+body{background-color: var(--alice-blue); overflow-x: hidden;}
+/* ICON DESKTOP */
+ion-icon {font-size: 30px;}
 /* Dont yourself repeat */
 .margin-container{gap: 194px}
 .txt-justify{text-align: justify;}
@@ -39,31 +38,33 @@ p, h3{margin-bottom: 0;}
 .fs-32{ font-size: 32px;}
 /* HEADER */
 header{
-    background-color: var(--gunmetal);
-    color: var(--alice-blue);
+  background-color: var(--gunmetal);
+  color: var(--alice-blue);
 }
 header .logo {width: 190px;}
 nav ul li {font-size: 22px;}
 .navbar-mobile{display: none;}
 /* Title */
 .horizontal-line {
-    width: 90px; /* Longueur du trait */
-    height: 2px; /* Épaisseur du trait */
-    background-color: var(--alice-blue); /* Couleur du trait */
+  width: 90px; /* Longueur du trait */
+  height: 2px; /* Épaisseur du trait */
+  background-color: var(--alice-blue); /* Couleur du trait */
 }
 .title {font-size: 48px;}
 .title-padding {padding-bottom: 7rem;}
 /* gallery photo */
 .gallery-item {padding: 0; /* Enlève le padding pour supprimer l'espace autour de l'image */}
 .gallery-img {
-    width: 100%; /* Remplit la largeur du conteneur */
-    height: 500px; /* Conserve le ratio d'aspect */
-    object-fit: cover; /* Optionnel : assure que l'image couvre toute la zone sans déformation */
+  width: 100%; /* Remplit la largeur du conteneur */
+  height: 500px; /* Conserve le ratio d'aspect */
+  object-fit: cover; /* Optionnel : assure que l'image couvre toute la zone sans déformation */
 }
 /* Pour enlever les marges entre les colonnes */
 .row.no-gutters {margin: 0;}
 .row.no-gutters > .col {padding: 0;}
 /* MAIN */
+main > section{gap: 54px;}
+main{margin: 120px 0 120px 0;}
 /* a propos */
 section#a-propos,
 section#a-propos a {color: var(--marina-blue);}
@@ -103,9 +104,7 @@ section#a-propos a {color: var(--marina-blue);}
     border: 2px solid;
 }
 /* formulaire de contact */
-.title-responsive {
-  font-size: 24px;
-}
+.title-responsive {font-size: 24px;}
 .contact-container article, form {
   padding: 32px;
   border-radius: 15px;
@@ -132,7 +131,7 @@ section#a-propos a {color: var(--marina-blue);}
   color: var(--Skobeloff);
   transition: ease 0.2s;
 }
-/* Footer */
+/******* Footer ********/
 footer {border-top: 3px solid;}
 /********* MOBILE AND TABLETTE VERSION *********/
 @media (max-width: 1200px){
