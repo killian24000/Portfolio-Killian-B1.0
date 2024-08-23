@@ -11,18 +11,14 @@ var splide = new Splide( '.splide', {
   gap: '16px',
   type: 'loop',
   focus: 'center',
+  autoplay: true,
+  interval: 5000,
   rewind : true,
   pagination: false,
   arrows: false,
-  autoScroll: {
-    speed: 0.5,
-    pauseOnHover: true,
-    pauseOnFocus: true,
-  },
   breakpoints: {
     1200: {
       perPage: 2,
-      autoScroll: false,
     },
     767: {
       perPage: 2,
@@ -34,5 +30,5 @@ var splide = new Splide( '.splide', {
   },
 } );
 
-splide.mount(window.splide.Extensions);  
+splide.mount();  
 });
