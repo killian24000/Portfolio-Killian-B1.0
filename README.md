@@ -8,7 +8,10 @@ le Framework CSS Bootstrap sera utilisé afin de ne pas perdre de temps avec la 
 
 L’intérêt d’un telle projet est multiple : 
 
-  1. Mettre en place un système de gestion de contenu me permettant de mettre à jour le site sans avoir à revenir dans le code 
+  1. Mettre en place un système de gestion de contenu me permettant de mettre à jour le site  sans avoir à revenir dans le code .
+
   2. Réaliser un projet en React.js afin de bien maitrisé cette technologie. 
-  3. Apprendre l’utilisation d’un nouveau CMS 
+
+  3. Apprendre l’utilisation d’un nouveau CMS .
+
   4. Mettre en place une application mobile afin de pouvoir y accéder rapidement si besoin.
