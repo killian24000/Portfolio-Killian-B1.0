@@ -14,7 +14,7 @@ var splide = new Splide( '.splide', {
   autoplay: true,
   interval: 5000,
   rewind : true,
-  pagination: false,
+  pagination: true,
   arrows: false,
   breakpoints: {
     1200: {
@@ -22,7 +22,6 @@ var splide = new Splide( '.splide', {
     },
     767: {
       perPage: 2,
-      pagination: true,
     },
     500: {
       perPage: 1,
